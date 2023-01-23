@@ -64,7 +64,7 @@ small, .text_small {
 }
 
 .text-pri:hover {
-  color: #388531;
+  color: #369ce0;
 }
 
 .text-sec {
@@ -76,7 +76,7 @@ small, .text_small {
 }
 
 a {
-  color: #388531;
+  color: #369ce0;
 }
 
 li {
@@ -123,15 +123,15 @@ hr {
 }
 
 .navbar .active {
-  background-color: #fffdf0;
+  background-color: #f7f7f7;
 }
 
 .creme {
-  background-color: #fffdf0;
+  background-color: #f7f7f7;
 }
 
 .mintlight {
-  background-color: #d0f9e5;
+  background-color: #369ce0;
 }
 
 @media screen and (max-width: 768px) {
