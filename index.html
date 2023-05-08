@@ -1,53 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joey Reyes Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
   <link rel="stylesheet" href="scss/styles.css">
-  <script src="https://kit.fontawesome.com/588d34faaa.js" crossorigin="anonymous"></script>
-  <title>JR Personal Website</title>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script> 
+  <script src="https://kit.fontawesome.com/d85874bc80.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<nav class="navbar mintlight navbar-light navbar-expand py-0">
-  <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-    <a class="navbar-brand mr-auto" href="./index.html">
-      JR
-    </a>
-    <a class="nav-item nav-link text-pri active" href="./index.html">About Me</a>
-    <a class="nav-item nav-link text-pri" href="./projects.html">Projects</a>
+<!-- Navigation bar -->
+<nav class="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="projects.html">Joey Reyes | Plutoneus</a>
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="projects.html">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.linkedin.com/in/joey-reyes-2b6b3b236/" target="_blank">LinkedIn</a>
+      </li>
+    </ul>
   </div>
 </nav>
 
-<div class="container-fluid d-flex justify-content-center" style="margin-bottom:4rem;margin-top:4rem;">
-  <div class="col-12 col-md-8 text-center">
-    <h1>
-      Joey Reyes
-    </h1>
-    <hr>
-    <img src="./image/me.jpg" alt="Definitely Me" class="mx-auto d-block creme img-thumbnail" width="300">
-    <hr>
+<div class="text-center portfolio-title">
+  <h1>Portfolio</h1>
+  <hr style="width: 45%;">
+  <div class="circle-banner">
+    <svg width="100%" height="100px" xmlns="http://www.w3.org/2000/svg">
+      <circle class="banner-circle" cx="38%" cy="50%" r="16" />
+      <circle class="banner-circle" cx="50%" cy="50%" r="20" />
+      <circle class="banner-circle" cx="62%" cy="50%" r="16" />
+    </svg>
+  </div>
+</div>
+<div class="centered-container">
+  <div class="accordion" id="portfolioAccordion">
+    <div class="accordion-item table-responsive-stack">
+      <h2 class="accordion-header text-center" id="headingPublishedGames">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePublishedGames" aria-expanded="false" aria-controls="collapsePublishedGames">
+          <span class="subject-icon fa-solid fa-gamepad"></span>
+          Games 
+        </button>
+      </h2>
+      <div id="collapsePublishedGames" class="accordion-collapse collapse" aria-labelledby="headingPublishedGames" data-bs-parent="#portfolioAccordion">
+        <div class="accordion-body">
+          <h2 class="text-center">Published Games</h2>
+          <hr>
+          <div class="project-item">
+            <div class="project-text">
+              <h3><span class="status-icon" data-tooltip="Published"><i class="fa-solid fa-circle-check fa-sm"></i></span>Mech Chip (2019)</h3>
+              <p>Mech Chip is a visually minimal 2D adventure game developed between September 2017 and February 2019. The player can take the form of several different robots rewarded for exploration. Published on Steam, this project marked my first exposure to game development and computer programming. Mech Chip focuses on exploration and puzzle-solving in a dark and futuristic world.</p>
+              <h4>Development</h4>
+              <p>Mech Chip's development journey was centered around my growth as a game developer, focusing on learning and applying new concepts to overcome challenges and achieve my creative vision. As my first exposure to game development, Mech Chip provided a valuable opportunity to develop a diverse range of skills, from level design and animations to audio management and object-oriented programming. The game's design emphasized the player's isolation in exploring a large, maze-like corridor. Mech Chip stands as my foray into creating engaging, immersive experiences from the ground up.</p>
+              <h4>Feature Highlights</h4>
+              <ul>
+                <li><h5>Custom Key Bindings</h5></li>
+                <li><h5>Gamepad Support</h5></li>
+                <li><h5>Player Controller & Finite State Machine</h5></li>
+                <li><h5>Camera System to Create Illusion of Individual Rooms</h5></li>
+                <li><h5>Dynamic Enemy & Boss Behaviors</h5></li>
+                <li><h5>Collision Detection & Resolution</h5></li>
+                <li><h5>Exploration-based Level Design</h5></li>
+                <li><h5>Save & Load Data</h5></li>
+                <li><h5>Visuals & Animations with Aseprite</h5></li>
+                <li><h5>Sound Design with FL Studio & Labchirp</h5></li>
+              </ul>
+              <h4>Tools</h4>
+              <div class="toolset">
+                <a href="https://gamemaker.io" target="_blank"><img class="icon" src="./image/Gamemaker2_icon.svg" alt="Gamemaker Studio 2 Icon SVG">GMS2</a>
+                <span class="bullet-dot"></span>
+                <a href="https://www.aseprite.org/" target="_blank"><img class="icon" src="./image/aseprite-icon.png" alt="Aseprite Icon PNG">Aseprite</a>
+                <span class="bullet-dot"></span>
+                <a href="https://www.image-line.com/" target="_blank"><img class="icon" src="./image/fl-header-logo.png" alt="FL Studio Icon PNG">FL Studio</a>
+                <span class="bullet-dot"></span>
+                <a href="http://labbed.net/software/labchirp/" target="_blank"><img class="icon" src="./image/icon-labchirp.png" alt="Labchirp Icon SVG">Labchirp</a>
+              </div>
+            </div>
 
-    <p>
-      Hello, and welcome to my simple page! My name is Joey, and I'm most interested in software, games, technology, and the people who use them.
-      During my time studying psychology at University of Illinois (Chicago), I originally worked towards becoming an effective therapist.
-      During the long hours alone in my dormroom, I became enthralled with software, coding, and game development. Game development has been a key component of my life ever since.
-    </p>
-    <p>
-      After graduating from UIC (2019) with my newfound passion, I studied Human-Computer Interaction (HCI) at DePaul University in hopes to work in the combined realm of software and behavioral psychology.
-      While at DePaul, I was immersed in a world of user research, data science, group cooperation, business processes, design solutions and much more.
-      After receiving my masters of science in HCI (2022), I moved with my mom and three dogs away from Illinois.
-      Currently, I am searching for full-time user experience, game development, data science, web development, and research positions in southern Florida with a preference for remote work.
-    </p>
+            <div class="project-img-wrapper">
+              <a href="https://store.steampowered.com/app/1010830/Mech_Chip/" target="_blank">
+                <img class="project-img" src="./image/mcheader.jpg" alt="Mech Chip Steam Title Banner">
+              </a>
+              <a href="https://store.steampowered.com/app/1010830/Mech_Chip/" target="_blank">
+                <img class="project-img" src="./image/mech_chip_scrn1.jpg" alt="Mech Chip">
+              </a>
+              <a href="https://store.steampowered.com/app/1010830/Mech_Chip/" target="_blank">
+                <img class="project-img" src="./image/mech_chip_scrn0.jpg" alt="Mech Chip">
+              </a>
+            </div>
+          </div>
+          <hr>
+          <div class="project-item">
+            <div class="project-text">
+              <h3><span class="status-icon" data-tooltip="Published"><i class="fa-solid fa-circle-check fa-sm"></i></span>Swing Lord (2020)</h3>
+              <p>Swing Lord is a challenging yet simple game developed between March 2020 and November 2020 using the Godot game engine. The game is centered around ascension, and the player's tentacle-grappling-hook allows them to navigate through the world. The project focused on creating a punishing yet engaging experience with tight, minimal gameplay mechanics. Swing Lord was an exercise in designing for varied gameplay around a single mechanic, while maintaining challenge and accessibility.</p>
+              <h4>Development</h4>
+              <p>After Mech Chip's launch in 2019, I honed my skills with smaller demos before tackling Swing Lord, a project with a limited mechanical scope yet engaging gameplay. Godot has several capabilities over GMS2, such as vector math, accurate built-in physics, object-oriented classes, and an efficient node tree system. Utilizing Godot's strengths, I put my skills to the test quickly after learning what this engine could offer me. I created a 2D physics-based game featuring intricate levels with hand-placed tiles and challenges. With the grappling hook character controller and simple goal for the player to reach the top, development went rather smoothly for Swing Lord.</p>
+              <h4>Feature Highlights</h4>
+              <ul>
+                <li><h5>Swing & Grapple Controller</h5></li>
+                <li><h5>Static Enemy & Hazard Behavior</h5></li>
+                <li><h5>Color Palette Swap Shader</h5></li>
+                <li><h5>Cosmetic Collectibles</h5></li>
+                <li><h5>Challenging & Engaging Level Design</h5></li>
+                <li><h5>Save & Load Data</h5></li>
+                <li><h5>Visuals & Animations with Aseprite</h5></li>
+                <li><h5>Sound Design with Famitracker & Labchirp</h5></li>
+              </ul>
+              <h4>Tools</h4>
+              <div class="toolset">
+                <a href="https://godotengine.org/" target="_blank"><img class="icon" src="./image/Godot_icon.svg" alt="Godot Icon SVG">Godot</a>
+                <span class="bullet-dot"></span>
+                <a href="https://www.aseprite.org/" target="_blank"><img class="icon" src="./image/aseprite-icon.png" alt="Aseprite Icon PNG">Aseprite</a>
+                <span class="bullet-dot"></span>
+                <a href="https://famitracker.org/" target="_blank"><img class="icon" src="./image/Famitracker-icon.png" alt="Famitracker Icon PNG">Famitracker</a>
+                <span class="bullet-dot"></span>
+                <a href="http://labbed.net/software/labchirp/" target="_blank"><img class="icon" src="./image/icon-labchirp.png" alt="Labchirp Icon SVG">Labchirp</a>
+              </div>
+            </div>
+            <div class="project-img-wrapper">
+              <a href="https://store.steampowered.com/app/1405480/Swing_Lord/" target="_blank">
+                <img class="project-img" src="./image/slheader.jpg" alt="Swing Lord Steam Title Banner">
+              </a>
+              <a href="https://store.steampowered.com/app/1405480/Swing_Lord/" target="_blank">
+                <img class="project-img" src="./image/swing_lord_scrn0.jpg" alt="Swing Lord Screenshot Teal">
+              </a>
+              <a href="https://store.steampowered.com/app/1405480/Swing_Lord/" target="_blank">
+                <img class="project-img" src="./image/swing_lord_scrn2.jpg" alt="Swing Lord Screenshot Neon">
+              </a> 
+              <a href="https://store.steampowered.com/app/1405480/Swing_Lord/" target="_blank">
+                <img class="project-img" src="./image/swing_lord_scrn3.jpg" alt="Swing Lord Screenshot Green">
+              </a>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-center">Notable Prototypes</h2>
+        <hr>
+        <div class="prototype-grid">
+          <div class="prototype-item">
+            <h4 class="text-center"><span class="status-icon" data-tooltip="Playable"><i class="fa-solid fa-circle-exclamation fa-sm"></i></span>Pyjama Princess</h4>
+            <div class="prototype-wrapper">
+              <a href="https://plutoneus.itch.io/pyjama-princess" target="_blank">
+                <img class="project-img" src="./image/PyjamaPrincess.png" alt="Prototype 1, Pyjama Princess Image & Link">
+              </a>
+            </div>
+            <ul>
+              <li>Block Puzzles</li>
+              <li>Top-Down View</li>
+              <li>Simple Character Controller</li>
+              <li>Keyboard & Mouse Gameplay</li>
+            </ul>
+            <h4>Tools</h4>
+            <hr>
+            <div class="toolset">
+              <a href="https://gamemaker.io" target="_blank"><img class="icon" src="./image/Gamemaker2_icon.svg" alt="Gamemaker Studio 2 Icon SVG">GMS2</a>
+              <span class="bullet-dot"></span>
+              <a href="https://www.aseprite.org/" target="_blank"><img class="icon" src="./image/aseprite-icon.png" alt="Aseprite Icon PNG">Aseprite</a>
+            </div>
+          </div>
+          <div class="prototype-item">
+            <h4 class="text-center"><span class="status-icon" data-tooltip="Playable"><i class="fa-solid fa-circle-exclamation fa-sm"></i></span>Dessert Desert</h4>
+            <div class="prototype-wrapper">
+              <a href="https://plutoneus.itch.io/project5" target="_blank">
+                <img class="project-img" src="./image/DessertDesert.png" alt="Prototype 2, Dessert Desert Image & Link" >
+              </a>
+            </div>
+            <ul>
+              <li>Procedural Terrain, Enemy, and Item Generation</li>
+              <li>AI Behavior & Pathfinding</li>
+              <li>Action-focused Character Controller</li>
+            </ul>
+            <h4>Tools</h4>
+            <hr>
+            <div class="toolset">
+              <a href="https://gamemaker.io" target="_blank"><img class="icon" src="./image/Gamemaker2_icon.svg" alt="Gamemaker Studio 2 Icon SVG">GMS2</a>
+              <span class="bullet-dot"></span>
+              <a href="https://www.aseprite.org/" target="_blank"><img class="icon" src="./image/aseprite-icon.png" alt="Aseprite Icon PNG">Aseprite</a>
+            </div>
+          </div>
+          <div class="prototype-item">
+            <h4 class="text-center"><span class="status-icon" data-tooltip="Playable"><i class="fa-solid fa-circle-exclamation fa-sm"></i></span>Stellar Veins</h4>
+            <div class="prototype-wrapper">
+              <a href="https://plutoneus.itch.io/stellar-veins" target="_blank">
+                <img class="project-img" class="prototype-img" src="./image/StellarVeins.png" alt="Prototype 3, Stellar Veins Image & Link">
+              </a>
+            </div>
+            <ul>
+              <li>Nonlinear Level Design</li>
+              <li>2D Combat & Platforming</li>
+              <li>Dialogue Windows</li>
+              <li>Visual Effects, Animations & Shaders</li>
+              <li>Collectible Tools & Inventory System</li>
+              <li>Save & Load Data</li>
+              <li>Background Music & SFX</li>
+            </ul>
+            <h4>Tools</h4>
+            <hr>
+            <div class="toolset">
+              <a href="https://godotengine.org/" target="_blank"><img class="icon" src="./image/Godot_icon.svg" alt="Godot Icon SVG">Godot</a>
+              <span class="bullet-dot"></span>
+              <a href="https://www.aseprite.org/" target="_blank"><img class="icon" src="./image/aseprite-icon.png" alt="Aseprite Icon PNG">Aseprite</a>
+              <span class="bullet-dot"></span>
+              <a href="https://www.image-line.com/" target="_blank"><img class="icon" src="./image/fl-header-logo.png" alt="FL Studio Icon PNG">FL Studio</a>
+                <span class="bullet-dot"></span>
+              <a href="http://labbed.net/software/labchirp/" target="_blank"><img class="icon" src="./image/icon-labchirp.png" alt="Labchirp Icon SVG">Labchirp</a>
+            </div>
+          </div>
+          <div class="prototype-item">
+            <h4 class="text-center"><span class="status-icon" data-tooltip="Unavailable"><i class="fa-solid fa-circle-xmark fa-sm"></i></span>Fairy Roguelite</h4>
+            <div class="prototype-wrapper">
+              <a href="https://twitter.com/Plutoneus/status/1355656415344517122" target="_blank">
+                <img class="project-img" class="prototype-img" src="./image/FairyR.png" alt="Prototype 4, Fairy Roguelite Image & Link to Twitter">
+              </a>
+            </div>
+            <ul>
+              <li>Procedural Level Design</li>
+              <li>Top-Down Ranged Combat</li>
+              <li>Mini-Map</li>
+              <li>Spell Casting System</li>
+              <li>Visual Effects, Animations & Shaders</li>
+            </ul>
+            <h4>Tools</h4>
+            <hr>
+            <div class="toolset">
+              <a href="https://godotengine.org/" target="_blank"><img class="icon" src="./image/Godot_icon.svg" alt="Godot Icon SVG">Godot</a>
+              <span class="bullet-dot"></span>
+              <a href="https://www.aseprite.org/" target="_blank"><img class="icon" src="./image/aseprite-icon.png" alt="Aseprite Icon PNG">Aseprite</a>
+              <span class="bullet-dot"></span>
+              <a href="http://labbed.net/software/labchirp/" target="_blank"><img class="icon" src="./image/icon-labchirp.png" alt="Labchirp Icon SVG">Labchirp</a>
+            </div>
+          </div>
+          <div class="prototype-item">
+            <h4 class="text-center"><span class="status-icon" data-tooltip="Playable"><i class="fa-solid fa-circle-exclamation fa-sm"></i></span>Cube of Cubes</h4>
+            <div class="prototype-wrapper">
+              <a href="https://plutoneus.itch.io/cubeofcubes" target="_blank">
+                <img class="project-img" class="prototype-img" src="./image/Clean3D.png" alt="Prototype 5, Cube Image & Link">
+              </a>
+            </div>
+            <ul>
+              <li>Math Visualization</li>
+              <li>Execution of User Input</li>
+              <li>Browser Application</li>
+              <li>Inspired by <a href="https://tixy.land/">tixy.land</a></li>
+            </ul>
+            <h4>Tools</h4>
+            <hr>
+            <div class="toolset">
+              <a href="https://godotengine.org/" target="_blank"><img class="icon" src="./image/Godot_icon.svg" alt="Godot Icon SVG">Godot</a>
+            </div>
+          </div>
+          <div class="prototype-item">
+            <h4 class="text-center"><span class="status-icon" data-tooltip="Unavailable"><i class="fa-solid fa-circle-xmark fa-sm"></i></span>Autobattler Project</h4>
+            <div class="prototype-wrapper">
+              <a href="https://twitter.com/Plutoneus/status/1580955479642996741" target="_blank">
+                <img class="project-img" class="prototype-img" src="./image/Auto.png" alt="Prototype x, Autobattler Image & Link">
+              </a>
+            </div>
+            <ul>
+              <li>Strategic Turn-based Tactics</li>
+              <li>Unique Grid Battle Concept</li>
+              <li>Autobattler Trait Synergy Mechanic</li>
+              <li>Procedural Upgrades & Minions</li>
+              <li>Dataset Management</li>
+              <li>Sound Effects</li>
+            </ul>
+            <h4>Tools</h4>
+            <hr>
+            <div class="toolset">
+              <a href="https://godotengine.org/" target="_blank"><img class="icon" src="./image/Godot_icon.svg" alt="Godot Icon SVG">Godot</a>
+              <span class="bullet-dot"></span>
+              <a href="https://www.aseprite.org/" target="_blank"><img class="icon" src="./image/aseprite-icon.png" alt="Aseprite Icon PNG">Aseprite</a>
+              <span class="bullet-dot"></span>
+              <a href="http://labbed.net/software/labchirp/" target="_blank"><img class="icon" src="./image/icon-labchirp.png" alt="Labchirp Icon SVG">Labchirp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item table-responsive-stack">
+      <h2 class="accordion-header" id="headingUserResearch">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUserResearch" aria-expanded="false" aria-controls="collapseUserResearch">
+          <span class="subject-icon fa-solid fa-flask"></span> User Research
+        </button>
+      </h2>
+      <div id="collapseUserResearch" class="accordion-collapse collapse" aria-labelledby="headingUserResearch" data-bs-parent="#portfolioAccordion">
+        <div class="accordion-body">
+          <div class="container">
+            <div class="row research-item">
+              <h3>Online Job Searching</h3>
+              <hr>
+              <div class="col-md-8 col-sm-12 research-content">
+                <p>This study sought to explore the job search behaviors of users open to relocation by employing a mixed-methods approach. We conducted interviews and observations with eight participants, followed by a survey with 38 respondents. Our research aimed to provide insights into user preferences and strategies for job searching when open to relocating, which can inform the design of job search platforms.</p>
+                
+                <p>Our findings revealed four main themes: (1) openness to relocation, with participants basing their decision on pay and benefits; (2) the importance of job title and location as primary search filters, with users employing a cyclical approach to search for multiple job titles across different locations; (3) a preference for autofill features to speed up the search process, with users finding value in autosaving search filters; and (4) a tendency to search by city rather than region. These insights can help job search platforms enhance their user experience by focusing on features that align with the preferences of users open to relocation, ultimately providing a more tailored and efficient job search experience.</p>
+              </div>
+              <div class="col-md-4 col-sm-12 research-sidebar">
+                <div class="card">
+                  <h4>Contributions</h4>
+                  <ul>
+                    <li>Surveys</li>
+                    <li>Interviews</li>
+                    <li>Live Observation</li>
+                    <li>Affinity Diagrams</li>
+                    <li>Personas & Spectrums</li>
+                    <li>User Scenarios</li>
+                    <li>Experience Maps</li>
+                    <li>Design Implications</li>
+                  </ul>
+                  <a class="pdf-link" href="doc/JSearch.pdf" target="_blank">
+                    <img class="pdf-icon" src="./image/pdficon.png" alt="PDF Icon">
+                    View Full Paper
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row research-item">
+              <h3>Mental Health App Study</h3>
+              <hr>
+              <div class="col-md-8 col-sm-12 research-content">
+                <p>This study aimed to evaluate the usability of the What's Up app, a mental health support application, using a series of moderated, exploratory tests. Participants were recruited to perform various tasks via live Zoom calls with screen sharing, focusing on emotional coping strategies and app navigation. The research team collected both quantitative data, such as success and failure rates, and qualitative data, including participant feedback and observed notable actions. A pilot test was performed before recruiting users to optimize the assessment process.</p>
+                
+                <p>The findings revealed that users faced difficulties navigating the app due to inconsistent gesture methods, although they found configuring the app settings to be straightforward. Based on the results, recommendations were made to improve usability, such as providing consistent gestures or image-based instructions, incorporating activity overviews, and using more imagery in place of text. Additionally, a comparison test with Sanvello, another mental health support app, demonstrated that Sanvello scored higher in ease and enjoyability, providing valuable insights for the future development of the What's Up app.</p>
+              </div>
+              <div class="col-md-4 col-sm-12 research-sidebar">
+                <div class="card">
+                <h4>Contributions</h4>
+                <ul>
+                  <li>Moderated User Testing</li>
+                  <li>Exploratory Testing</li>
+                  <li>Task-based Assessments</li>
+                  <li>Heuristic Evaluation</li>
+                  <li>Quant & Qual Data Collection</li>
+                  <li>Analysis of Result Differences</li>
+                  <li>Survey</li>
+                </ul>
+                <a class="pdf-link" href="doc/Whatsup.pdf" target="_blank">
+                  <img class="pdf-icon" src="./image/pdficon.png" alt="PDF Icon">
+                  View Presentation Document
+                </a>
+                </div>
+              </div>
+            </div>
+            <div class="row research-item">
+              <h3>Vision Impaired Users & Kiosk Accessibility</h3>
+              <hr>
+              <div class="col-md-8 col-sm-12 research-content">
+                <p>In this study, we conducted interviews with four individuals with blindness or low vision to understand their experiences with self-service kiosks. We found that locating kiosks, navigating their interfaces, concerns over privacy and security, and the need for assistance are common challenges faced by these users. Consistency in design, location, and layout of kiosks, as well as improved interfaces, privacy, and security measures, could enhance the experience for users with visual impairments.</p>
+
+                <h4>Key Findings</h4>
+                <ol>
+                  <li>Kiosk Familiarity: Interviewees expressed frustration in finding and understanding kiosk layouts due to inconsistent design and location. Consistency in design and location could greatly improve accessibility for blind and visually impaired users.</li>
+                  
+                  <li>Kiosk Interface: Touchscreen interfaces posed a significant barrier for users, as they rely on visual placement of buttons. Providing alternative feedback, such as auditory guidance or haptic feedback, could improve kiosk usability for visually impaired users.</li>
+                  
+                  <li>Privacy and Security: Participants expressed concerns over physical theft, information theft, and verification of signatures when using kiosks. Placing kiosks inside organization spaces, having a trusted person assist, and using headphones are potential solutions to increase privacy and security.</li>
+                  
+                  <li>Assistance: Participants often brought a trusted person or relied on staff assistance when using inaccessible kiosks or when they wanted the interaction to be faster. Providing training for employees on accessibility accommodations could greatly benefit blind and low vision users.</li>
+                </ol>
+                
+                <p>Our study was limited by its remote nature and reliance on participant recall. Future research could involve observation of a larger number of participants interacting with various kiosks, providing more insight into the challenges faced by blind and low vision users and ways to improve their experiences.</p>
+              </div>
+              <div class="col-md-4 col-sm-12 research-sidebar">
+                <div class="card">
+                  <h4>Contributions</h4>
+                  <ul>
+                    <li>Semi-Structured Interviews</li>
+                    <li>Affinity Diagrams</li>
+                    <li>Pain Point Research</li>
+                    <li>Literature Review</li>
+                    <li>Design Implications</li>
+                  </ul>
+                  <a class="pdf-link" href="doc/Kiosk.pdf" target="_blank">
+                    <img class="pdf-icon" src="./image/pdficon.png" alt="PDF Icon">
+                    View Full Paper
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row research-item">
+              <h3>Itch.io Web Accessibility Report</h3>
+              <hr>
+              <div class="col-md-8 col-sm-12 research-content">
+                <p>In this study, I analyzed the web accessibility of Itch.io's homepage and game browser page using various manual and automatic evaluation methods. These included W3's Easy Checks, CSS and HTML validators, ARIA assessment, readability testing, WAVE Web Accessibility Evaluation Tool, and TAW (a web accessibility test). The study found that the Itch.io pages have an unorthodox structure, with gaps in accessibility due to missing alt text, lack of coherent tab navigation, and other issues.</p>
+
+                <p>I recommend reformatting the page's structural elements, such as meaningful headers and tab order, and to improve screen reader legibility by properly labeling and creating images within the site. This includes using alt text on all images or finding an alternative solution so that screen readers focus on content titles only, rather than their blurbs and descriptions.</p>
+              </div>
+              <div class="col-md-4 col-sm-12 research-sidebar">
+                <div class="card">
+                  <h4>Contributions</h4>
+                  <ul>
+                    <li>HTML and CSS Validators</li>
+                    <li>W3 Easy Checks</li>
+                    <li>ARIA Assessment</li>
+                    <li>Readability Testing</li>
+                    <li>WAVE & TAW Web Accessibility Tests</li>
+                  </ul>
+                  <a class="pdf-link" href="doc/ItchWebReport.pdf" target="_blank">
+                    <img class="pdf-icon" src="./image/pdficon.png" alt="PDF Icon">
+                    View Full Paper
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row research-item">
+              <h3>CRM Findability</h3>
+              <hr>
+              <div class="col-md-8 col-sm-12 research-content">
+                <p>In this study, we evaluated user satisfaction, accessibility, and overall effectiveness of CRM Logic's lead page. Our research indicated that users often experienced frustration due to missing information and difficulty locating information quickly. Many users blamed themselves for their CRM system's errors, adjusting their processes to correct these issues. We found that using icons and graphs in our low-fi prototype testing led to more successful task completion, as these visual elements were more distinguishable than tabular data. However, some challenges were encountered during our low-fi and mid-fi prototype testing, such as the high failure rate in Task 4, which we suspect was due to the conflation of Loans and Production.</p>
+                
+                <p>We initially aimed to optimize CRM system processes but had to narrow our focus to CRM Logic's Lead Page due to limited resources and time constraints. Our participant pool included adult computer users, leading to a broad scope of participants. While our study had some limitations, such as small sample sizes, our efforts led to improvements in the Lead page's usability. Future work should address ambiguities in testing procedures and results, as well as refining the scope of participants to include only CRM Logic users. This would ensure that results directly reflect and impact real users of the system.</p>
+              </div>
+              <div class="col-md-4 col-sm-12 research-sidebar">
+                <div class="card">
+                  <h4>Contributions</h4>
+                  <ul>
+                    <li>Project & Team Management</li>
+                    <li>Surveys</li>
+                    <li>Interviews</li>
+                    <li>Literature Review</li>
+                    <li>Chalkmark Testing</li>
+                    <li>Personas</li>
+                    <li>Data Informed Design</li>
+                  </ul>
+                  <a class="pdf-link" href="doc/Capstone.pdf" target="_blank">
+                    <img class="pdf-icon" src="./image/pdficon.png" alt="PDF Icon">
+                    View Full Paper
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
 
   </div>
 </div>
 
-<script src="js/jquery.slim.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
