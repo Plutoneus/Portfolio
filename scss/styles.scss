@@ -67,7 +67,7 @@ hr {
   background-color: #5e5e5e;
   border: none;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   margin: auto;
 }
 
@@ -276,8 +276,6 @@ a {
   border-radius: 1rem;
   padding: 0.5rem;
   margin-bottom: 2rem;
-  // border-bottom: 1px solid #ccc;
-  // border-right: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   transition: background-color 0.3s ease;
 
@@ -326,13 +324,30 @@ a {
   margin-right: 4px;
 }
 
+// .research-item {
+//   display: auto;
+//   flex-wrap: wrap;
+//   margin-top: 1.5rem;
+//   p {
+//     margin-top: 1rem;
+//   }
+// }
+
 .research-item {
-  display: auto;
+  display: flex;
   flex-wrap: wrap;
-  margin-top: 1.5rem;
-  p {
-    margin-top: 1rem;
-  }
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.research-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .card {
@@ -358,6 +373,7 @@ a {
   vertical-align: middle;
 }
 
+// Small devices
 @media screen and (max-width: 768px) {
   .table-responsive-stack {
     tr {
@@ -365,6 +381,9 @@ a {
       border-bottom: 3px solid #ccc;
       display:block;
     }
+  }
+  .container {
+    width: 95%;
   }
   .centered-container {
     max-width: 90%;
@@ -374,21 +393,65 @@ a {
   .accordion-button {
     width: 100%;
   }
-}
-
-// Small devices (navbar toggle)
-@media (min-width: 576px) {
-  nav-top {display: flex;}
-  .table-responsive-stack thead {display: none;}
-  // .centered-container {
-    //   max-width: 90%;
-    //   margin-left: auto;
-    //   margin-right: auto;
-    // }
+  .project-item {
+    flex-direction: column;
+  }
+  .project-text,
+  .project-img-wrapper {
+    flex: 1;
+    max-width: 100%;
   }
   
-  // Medium devices (navbar toggle)
-  @media (min-width: 768px) {
-    nav-top {display: none;}
-    .table-responsive-stack thead {display: block;}
+  .project-img-wrapper {
+    order: -1;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .container {
+    width: 95%;
+  }
+  .centered-container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .accordion-button {
+    width: 100%;
+  }
+  .project-item {
+    flex-direction: column;
+  }
+  .project-text,
+  .project-img-wrapper {
+    flex: 1;
+    max-width: 100%;
+  }
+  
+  .project-img-wrapper {
+    order: -1;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .research-item {
+    flex-direction: row;
+  }
+  .research-content {
+    flex: 1 0 66.666667%;
+    max-width: 66.666667%;
+  }
+
+  .research-sidebar {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
 }

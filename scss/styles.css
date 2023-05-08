@@ -83,7 +83,7 @@ hr {
   background-color: #5e5e5e;
   border: none;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   margin: auto;
 }
 
@@ -338,12 +338,20 @@ a:hover {
 }
 
 .research-item {
-  display: auto;
+  display: flex;
   flex-wrap: wrap;
-  margin-top: 1.5rem;
+  flex-direction: column;
 }
-.research-item p {
-  margin-top: 1rem;
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.research-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .card {
@@ -375,6 +383,9 @@ a:hover {
     border-bottom: 3px solid #ccc;
     display: block;
   }
+  .container {
+    width: 95%;
+  }
   .centered-container {
     max-width: 90%;
     margin-left: auto;
@@ -383,20 +394,60 @@ a:hover {
   .accordion-button {
     width: 100%;
   }
+  .project-item {
+    flex-direction: column;
+  }
+  .project-text,
+  .project-img-wrapper {
+    flex: 1;
+    max-width: 100%;
+  }
+  .project-img-wrapper {
+    order: -1;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
-@media (min-width: 576px) {
-  nav-top {
-    display: flex;
+@media (min-width: 769px) and (max-width: 991px) {
+  .container {
+    width: 95%;
   }
-  .table-responsive-stack thead {
-    display: none;
+  .centered-container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .accordion-button {
+    width: 100%;
+  }
+  .project-item {
+    flex-direction: column;
+  }
+  .project-text,
+  .project-img-wrapper {
+    flex: 1;
+    max-width: 100%;
+  }
+  .project-img-wrapper {
+    order: -1;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 }
-@media (min-width: 768px) {
-  nav-top {
-    display: none;
+@media screen and (min-width: 992px) {
+  .research-item {
+    flex-direction: row;
   }
-  .table-responsive-stack thead {
-    display: block;
+  .research-content {
+    flex: 1 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .research-sidebar {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
   }
 }/*# sourceMappingURL=styles.css.map */
