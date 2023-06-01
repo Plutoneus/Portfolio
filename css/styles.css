@@ -159,7 +159,13 @@ a:hover {
 
 .icon {
   margin-right: 4px;
+  min-width: 48px;
   max-width: 48px;
+}
+
+.brand-icon {
+  width: 24px;
+  padding-top: -1rem;
 }
 
 .creme {
