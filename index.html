@@ -17,30 +17,22 @@
 <!-- Navigation bar -->
 <nav class="navbar">
   <div class="container">
-    <!-- <img class="brand-icon" src="./image/P.svg" alt="Plutoneus Icon SVG"> -->
-    <a class="navbar-brand" href=""> Joey Reyes | Plutoneus</a>
+    <a class="navbar-brand nav-link" href="">Joey Reyes</a>
     <ul class="nav">
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="">Portfolio</a>
-      </li> -->
       <li class="nav-item">
-        <a class="nav-link" href="https://www.linkedin.com/in/joey-reyes-2b6b3b236/" target="_blank">LinkedIn</a>
+        <a class="nav-link" href="https://plutoneus.itch.io/" target="_blank">Itch</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/Plutoneus" target="_blank">Github</a>
       </li>
     </ul>
   </div>
 </nav>
 
-<div class="text-center portfolio-title">
+<!-- <div class="text-center portfolio-title">
   <h1>Portfolio</h1>
   <hr style="width: 45%;">
-  <!-- <div class="circle-banner">
-    <svg width="100%" height="100px" xmlns="http://www.w3.org/2000/svg">
-      <circle class="banner-circle" cx="38%" cy="50%" r="16" />
-      <circle class="banner-circle" cx="50%" cy="50%" r="20" />
-      <circle class="banner-circle" cx="62%" cy="50%" r="16" />
-    </svg>
-  </div> -->
-</div>
+</div> -->
 <div class="centered-container">
   <div class="accordion" id="portfolioAccordion">
     <div class="accordion-item table-responsive-stack">
@@ -52,8 +44,8 @@
       </h2>
       <div id="collapsePublishedGames" class="accordion-collapse collapse" aria-labelledby="headingPublishedGames" data-bs-parent="#portfolioAccordion">
         <div class="accordion-body">
-          <h2 class="text-center">Published Games</h2>
-          <hr>
+          <!-- <h2 class="text-center">Published Games</h2>
+          <hr> -->
           <div class="project-item">
             <div class="project-text">
               <h3><span class="status-icon" data-tooltip="Published"><i class="fa-solid fa-circle-check fa-sm"></i></span>Mech Chip (2019)</h3>
@@ -62,16 +54,17 @@
               <p>Mech Chip's development journey was centered around my growth as a game developer, focusing on learning and applying new concepts to overcome challenges and achieve my creative vision. As my first exposure to game development, Mech Chip provided a valuable opportunity to develop a diverse range of skills, from level design and animations to audio management and object-oriented programming. The game's design emphasized the player's isolation in exploring a large, maze-like corridor. Mech Chip stands as my foray into creating engaging, immersive experiences from the ground up.</p>
               <h4>Feature Highlights</h4>
               <ul>
-                <li><h5>Custom Key Bindings</h5></li>
-                <li><h5>Gamepad Support</h5></li>
-                <li><h5>Player Controller & Finite State Machine</h5></li>
-                <li><h5>Camera System to Create Illusion of Individual Rooms</h5></li>
-                <li><h5>Dynamic Enemy & Boss Behaviors</h5></li>
-                <li><h5>Collision Detection & Resolution</h5></li>
-                <li><h5>Exploration-based Level Design</h5></li>
-                <li><h5>Save & Load Data</h5></li>
-                <li><h5>Visuals & Animations with Aseprite</h5></li>
-                <li><h5>Sound Design with FL Studio & Labchirp</h5></li>
+                <li>Custom Key Bindings</li>
+                <li>Gamepad Support</li>
+                <li>Player Controller & Finite State Machine</li>
+                <li>Camera System to Create Illusion of Individual Rooms</li>
+                <li>Dynamic Enemy & Boss Behaviors</li>
+                <li>Collision Detection & Resolution</li>
+                <li>Exploration-based Level Design</li>
+                <li>Save & Load Data</li>
+                <li>Visuals & Animations with Aseprite</li>
+                <li>Sound Design with FL Studio & Labchirp</li>
+                
               </ul>
               <h4>Tools</h4>
               <div class="toolset">
@@ -106,14 +99,14 @@
               <p>After Mech Chip's launch in 2019, I honed my skills with smaller demos before tackling Swing Lord, a project with a limited mechanical scope yet engaging gameplay. Godot has several capabilities over GMS2, such as vector math, accurate built-in physics, object-oriented classes, and an efficient node tree system. Utilizing Godot's strengths, I put my skills to the test quickly after learning what this engine could offer me. I created a 2D physics-based game featuring intricate levels with hand-placed tiles and challenges. With the grappling hook character controller and simple goal for the player to reach the top, development went rather smoothly for Swing Lord.</p>
               <h4>Feature Highlights</h4>
               <ul>
-                <li><h5>Swing & Grapple Controller</h5></li>
-                <li><h5>Static Enemy & Hazard Behavior</h5></li>
-                <li><h5>Color Palette Swap Shader</h5></li>
-                <li><h5>Cosmetic Collectibles</h5></li>
-                <li><h5>Challenging & Engaging Level Design</h5></li>
-                <li><h5>Save & Load Data</h5></li>
-                <li><h5>Visuals & Animations with Aseprite</h5></li>
-                <li><h5>Sound Design with Famitracker & Labchirp</h5></li>
+                <li>Swing & Grapple Controller</li>
+                <li>Static Enemy & Hazard Behavior</li>
+                <li>Color Palette Swap Shader</li>
+                <li>Cosmetic Collectibles</li>
+                <li>Challenging & Engaging Level Design</li>
+                <li>Save & Load Data</li>
+                <li>Visuals & Animations with Aseprite</li>
+                <li>Sound Design with Famitracker & Labchirp</li>
               </ul>
               <h4>Tools</h4>
               <div class="toolset">
@@ -142,7 +135,7 @@
             </div>
           </div>
         </div>
-        <h2 class="text-center">Notable Prototypes</h2>
+        <!-- <h2 class="text-center">Notable Prototypes</h2> -->
         <hr>
         <div class="prototype-grid">
           <div class="prototype-item">
@@ -459,9 +452,9 @@
               <p>This project was both a challenge and a learning experience. This particular tool takes advantage of an HTTP client called Axios to handle communication with <a href="https://eldenring.fanapis.com/">this fan-made Elden Ring API</a>. Understanding how to effectively utilize JSON data from an API within the scope of Vue was crucial. A large chunk of project time was spent desiging and implementing a comfortable interface for querying the API. I look forward to building more convenient sites with Vue in the future.</p>
               <h4>Capabilities</h4>
               <ul>
-                <li><h5>Browse the extent of Elden Ring weapons with a search bar</h5></li>
-                <li><h5>View cohesive weapon data on distinct cards</h5></li>
-                <li><h5>Compare personal character stats to determine usable weapons</h5></li>
+                <li>Browse the extent of Elden Ring weapons with a search bar</li>
+                <li>View cohesive weapon data on distinct cards</li>
+                <li>Compare personal character stats to determine usable weapons</li>
               </ul>
               <h4>Tools</h4>
               <div class="toolset">

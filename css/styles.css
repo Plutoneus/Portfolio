@@ -5,11 +5,11 @@ html {
 }
 
 body {
-  background: #e7e6e6;
+  background: #F1F1F1;
   font-family: "Oxygen", sans-serif;
   font-weight: 400;
   line-height: 1.75;
-  color: #000000;
+  color: #212529;
 }
 
 h1, h2, h3, h4, h5 {
@@ -65,14 +65,10 @@ small, .text_small {
 }
 
 .text-pri {
-  color: black;
+  color: #212529;
 }
 .text-pri:hover {
   color: #bfdff5;
-}
-
-a {
-  color: #6fbbed;
 }
 
 td {
@@ -98,7 +94,7 @@ hr {
 }
 
 .navbar {
-  background-color: #e6e6e6;
+  background-color: #F1F1F1;
   box-shadow: 0 0px 1px #5e5e5e;
   transition: background-color 0.3s ease, color 0.3s ease;
   padding: 0.5rem;
@@ -112,12 +108,12 @@ hr {
 }
 
 .nav-link {
-  color: #000000;
+  color: #212529;
   font-weight: 200;
-  transition: color 0.3s;
+  transition: color 0.1s;
 }
 .nav-link:hover {
-  color: #6fbbed;
+  color: #3466AA;
 }
 
 .subject-icon {
@@ -125,7 +121,7 @@ hr {
   padding-right: 1rem;
 }
 .subject-icon .accordion-button:not(.collapsed) {
-  color: #edede8;
+  color: #F1F1F1;
 }
 .subject-icon .accordion-button:not(.collapsed):hover {
   background-color: #6fbbed;
@@ -141,12 +137,12 @@ hr {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: #212529;
   font-weight: 200;
-  transition: color 0.3s;
+  transition: color 0.1s;
 }
 a:hover {
-  color: #6fbbed;
+  color: #3466AA;
 }
 
 .bullet-dot {
@@ -170,7 +166,7 @@ a:hover {
 }
 
 .creme {
-  background-color: #e6e6e6;
+  background-color: #F1F1F1;
 }
 
 .mintlight {
@@ -209,7 +205,7 @@ a:hover {
 
 .accordion-button:not(.collapsed) {
   background-color: #6fbbed;
-  color: #edede8;
+  color: #F1F1F1;
   transition: width 0.3s ease, background-color 0.3s ease;
   width: 100%;
 }
@@ -225,7 +221,7 @@ a:hover {
 .accordion-item {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  background: #e6e6e6;
+  background: #F1F1F1;
   border: none;
   justify-content: center;
 }
@@ -238,6 +234,7 @@ a:hover {
   max-width: 60%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 6rem;
 }
 
 .project-item {
@@ -313,7 +310,7 @@ a:hover {
 
 .prototype-item {
   width: 300px;
-  background-color: #e6e6e6;
+  background-color: #F1F1F1;
   border-radius: 4px;
   padding: 16px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -363,7 +360,7 @@ a:hover {
 
 .card {
   width: 300px;
-  background-color: #e6e6e6;
+  background-color: #F1F1F1;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   border-radius: 0.25rem;
   padding: 1rem;
