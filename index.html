@@ -25,6 +25,10 @@
       <li class="nav-item">
         <a class="nav-link" href="https://github.com/Plutoneus" target="_blank">Github</a>
       </li>
+      <button id="themeToggle" class="btn btn-sm toggle-btn" aria-label="Toggle theme">
+  🌙
+</button>
+
     </ul>
   </div>
 </nav>
@@ -51,7 +55,7 @@
               <h3><span class="status-icon" data-tooltip="Published"><i class="fa-solid fa-circle-check fa-sm"></i></span>Mech Chip (2019)</h3>
                   <p>I learned to feel passion for the process when making Mech Chip. I was instantly rewarded with little steps of progress. I knew that if I could make Mech Chip, I could create more games.</p>
               <h4>Development</h4>
-                  <p>in order to focus on technical aspects of the game, I limited my visual palette to 2 colors and set the resolution very low. Since it's a metroidvania, I focused on having mystery and isolation as core principles. I never allowed myself to tell the player where to go, but instead I nudge them in the right direction based on predicting their path throughout a large corridor. I latched onto the excitement, and learned that it's fun to develop games.</p>
+                  <p>In order to focus on technical aspects of the game, I limited my visual palette to 2 colors and set the resolution very low. Since it's a metroidvania, I focused on mystery and isolation as core principles. I never allowed myself to tell the player where to go, but instead I nudge them in the right direction based on predicting their path throughout a large corridor. I latched onto the excitement, and learned that it's fun to develop games.</p>
               <h4>Features</h4>
               <ul>
                 <li>Custom Key Bindings</li>
@@ -407,7 +411,7 @@
             <div class="row research-item">
               <h3>CRM Findability</h3>
               <hr>
-              <div class="col-md-8 col-sm-12 research-content">
+   
                 <p>In this study, we evaluated user satisfaction, accessibility, and overall effectiveness of CRM Logic's lead page. Our research indicated that users often experienced frustration due to missing information and difficulty locating information quickly. Many users blamed themselves for their CRM system's errors, adjusting their processes to correct these issues. We found that using icons and graphs in our low-fi prototype testing led to more successful task completion, as these visual elements were more distinguishable than tabular data. However, some challenges were encountered during our low-fi and mid-fi prototype testing, such as the high failure rate in Task 4, which we suspect was due to the conflation of Loans and Production.</p>
                 
                 <p>We initially aimed to optimize CRM system processes but had to narrow our focus to CRM Logic's Lead Page due to limited resources and time constraints. Our participant pool included adult computer users, leading to a broad scope of participants. While our study had some limitations, such as small sample sizes, our efforts led to improvements in the Lead page's usability. Future work should address ambiguities in testing procedures and results, as well as refining the scope of participants to include only CRM Logic users. This would ensure that results directly reflect and impact real users of the system.</p>
@@ -480,6 +484,28 @@
     </div>
   </div>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const themeToggle = document.getElementById("themeToggle");
+  const body = document.body;
+
+  // Apply saved theme immediately
+  if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("theme-dark");
+    themeToggle.textContent = "☀️";
+  }
+
+  themeToggle.addEventListener("click", () => {
+    body.classList.toggle("theme-dark");
+    const isDark = body.classList.contains("theme-dark");
+
+    themeToggle.textContent = isDark ? "☀️" : "🌙";
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  });
+});
+</script>
+
 
 </body>
 </html>
