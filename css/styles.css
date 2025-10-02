@@ -1,194 +1,130 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Oxygen:400");
+/* ------------------------------
+   Base Fonts & Resets
+------------------------------ */
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400|Open+Sans:400');
+
 html {
   font-size: 100%;
 }
 
 body {
-  background: #F1F1F1;
-  font-family: "Oxygen", sans-serif;
+  font-family: 'Open Sans', 'Oxygen', sans-serif;
   font-weight: 400;
+  font-size: 1rem;
   line-height: 1.75;
   color: #212529;
+  background: #F1F1F1;
+}
+
+p {
+  margin-bottom: 1rem;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Oxygen", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   line-height: 1.3;
   margin-bottom: 0.5rem;
 }
 
-h1 {
-  font-size: 3.052rem;
-}
-
-h2 {
-  font-size: 2.441rem;
-}
-
-h3 {
-  font-size: 1.953rem;
-}
-
-h4 {
-  font-size: 1.563rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
+h1 { font-size: 3.052rem; margin-top: 0; }
+h2 { font-size: 2.441rem; }
+h3 { font-size: 1.953rem; }
+h4 { font-size: 1.563rem; }
+h5 { font-size: 1.25rem; }
 
 h5.title, footer.title {
   font-style: italic;
 }
 
-small, .text_small {
-  font-size: 0.8rem;
-}
+small, .text_small { font-size: 0.75rem; }
 
-i {
-  font-size: 1rem;
-  font-weight: 100;
-}
+i { font-size: 1rem; font-weight: 100; }
 
-body {
-  font-size: 1rem;
-}
-
-.Link {
-  font-size: 1rem;
-}
-
-small, .text_small {
-  font-size: 0.75rem;
-}
-
-.text-pri {
-  color: #212529;
-}
-.text-pri:hover {
-  color: #bfdff5;
-}
-
-td {
-  font-size: 16px;
-}
-
-hr {
-  height: 1px;
-  background-color: #5e5e5e;
-  border: none;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  margin: auto;
-}
-
-.portfolio-title {
-  margin-top: 2.5rem;
-}
-
-.circle-banner {
-  margin-top: 0rem;
-  margin-bottom: 0rem;
-}
-
-.navbar {
-  background-color: #F1F1F1;
-  box-shadow: 0 0px 1px #5e5e5e;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  padding: 0.5rem;
-}
-.navbar:hover {
-  background-color: #d4d6d8;
-}
-
-.nav-item {
-  margin-right: 1rem;
-}
-
-.nav-link {
-  color: #212529;
-  font-weight: 200;
-  transition: color 0.1s;
-}
-.nav-link:hover {
-  color: #3466AA;
-}
-
-.subject-icon {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.subject-icon .accordion-button:not(.collapsed) {
-  color: #F1F1F1;
-}
-.subject-icon .accordion-button:not(.collapsed):hover {
-  background-color: #6fbbed;
-}
-
-.toolset {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
+/* ------------------------------
+   Links & Text Colors
+------------------------------ */
 a {
   text-decoration: none;
   color: #212529;
   font-weight: 200;
   transition: color 0.1s;
 }
-a:hover {
-  color: #3466AA;
-}
+a:hover { color: #3466AA; }
 
-.bullet-dot {
-  height: 8px;
-  width: 8px;
-  background-color: #333;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 8px;
-}
+.text-pri { color: #212529; }
+.text-pri:hover { color: #bfdff5; }
 
-.icon {
-  margin-right: 4px;
-  min-width: 48px;
-  max-width: 48px;
-}
+.text-sec { color: blue; }
+.text-ter { color: red; }
 
-.brand-icon {
-  width: 24px;
-  padding-top: -1rem;
-}
-
-.creme {
+/* ------------------------------
+   Navbar
+------------------------------ */
+.navbar {
   background-color: #F1F1F1;
+  box-shadow: 0 0px 1px #5e5e5e;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 0.5rem;
+}
+.navbar:hover { background-color: #d4d6d8; }
+.navbar .active { background-color: #f7f7f7; }
+
+.nav-item { margin-right: 1rem; }
+
+.nav-link {
+  color: #212529;
+  font-weight: 200;
+  transition: color 0.1s;
+}
+.nav-link:hover { color: #3466AA; }
+
+.toggle-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-left: auto;
+}
+.toggle-btn:hover { opacity: 0.8; }
+
+/* ------------------------------
+   Layout
+------------------------------ */
+.centered-container {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6rem;
 }
 
-.mintlight {
-  background-color: #6fbbed;
+.portfolio-title { margin-top: 2.5rem; }
+
+hr {
+  height: 1px;
+  background-color: #5e5e5e;
+  border: none;
+  margin: 1rem auto 2rem;
 }
 
+.creme { background-color: #F1F1F1; }
+.mintlight { background-color: #6fbbed; }
+
+/* ------------------------------
+   Accordion
+------------------------------ */
 .accordion-header {
   color: #212529;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-.accordion-header .accordion-button:not(.collapsed) {
-  border: none;
-}
+.accordion-header .accordion-button:not(.collapsed) { border: none; }
 
 .accordion-button {
-  padding: 1.5rem 1.5rem;
+  padding: 1.5rem;
   font-size: 2.441rem;
   border: 1px solid #212529;
   border-radius: 4px;
   font-weight: 500;
   text-align: center;
-  box-shadow: none;
   background: none;
   width: 40%;
   margin: auto;
@@ -199,259 +135,204 @@ a:hover {
   border: 1px solid #212529;
   outline: none;
 }
-.accordion-button:hover {
-  background-color: #d4d6d8;
-}
+.accordion-button:hover { background-color: #d4d6d8; }
 
 .accordion-button:not(.collapsed) {
   background-color: #6fbbed;
   color: #F1F1F1;
-  transition: width 0.3s ease, background-color 0.3s ease;
   width: 100%;
 }
-.accordion-button:not(.collapsed):hover {
-  background-color: #6fbbed;
-}
-
-.accordion-body {
-  padding: 2rem;
-  outline: none;
-}
+.accordion-body { padding: 2rem; }
 
 .accordion-item {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   background: #F1F1F1;
   border: none;
   justify-content: center;
 }
 
-.banner-circle {
-  fill: #c4c7c9;
-}
-
-.centered-container {
-  max-width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 6rem;
-}
-
-.project-item {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 2rem auto;
-}
-
-.project-text {
-  flex: 2;
-}
-
-.status-icon {
-  position: relative;
-  display: inline-block;
-  size: 16px;
-  padding: 0.1em;
-  cursor: pointer;
-}
-
-.status-icon:hover::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #333;
-  color: #fff;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 12px;
-  white-space: nowrap;
-  z-index: 10;
-  opacity: 1;
-  pointer-events: none;
-  transition: opacity 0.3s;
-}
-
-.status-icon::after {
-  opacity: 0;
-}
-
-.project-img-wrapper {
-  flex: 1;
-  display: column;
-  align-items: center;
-  justify-content: center;
-}
-
+/* ------------------------------
+   Project & Components
+------------------------------ */
+.project-item { display: flex; flex-wrap: wrap; gap: 1rem; margin: 2rem auto; }
+.project-text { flex: 2; }
+.project-img-wrapper { flex: 1; display: column; align-items: center; justify-content: center; }
 .project-img {
   max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: border-radius 0.3s ease;
+  height: auto;
+  max-height: 300px;   /* limits how tall images can be */
+  object-fit: contain; /* keeps full image visible without cropping */
   border-radius: 1rem;
   padding: 0.5rem;
   margin-bottom: 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 .project-img:hover {
   background-color: #d4d6d8;
-}
-
-.prototype-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-.prototype-item {
-  width: 300px;
-  background-color: #F1F1F1;
-  border-radius: 4px;
-  padding: 16px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  margin-bottom: 16px;
-}
-
-.prototype-item h3 {
-  margin-bottom: 8px;
-}
-
-.prototype-item img {
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 4px;
-  margin-bottom: 8px;
-  cursor: pointer;
-}
-
-.prototype-item ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.prototype-item li:before {
-  content: "•";
-  margin-right: 4px;
-}
-
-.research-item {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.research-item {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  transform: scale(1.02); /* subtle zoom on hover */
 }
 
 .card {
   width: 300px;
   background-color: #F1F1F1;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
   border-radius: 0.25rem;
   padding: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
-.pdf-link {
-  display: inline-block;
-  margin-top: 1rem;
-  text-decoration: none;
+.icon {
+  width: 48px;         /* consistent width */
+  height: 48px;        /* consistent height */
+  object-fit: contain; /* keeps aspect ratio inside the box */
+  margin-right: 4px;
 }
 
-.pdf-icon {
-  display: inline-block;
-  max-width: 3rem;
-  margin-right: 0.5rem;
-  vertical-align: middle;
-}
 
+/* ------------------------------
+   Responsive
+------------------------------ */
 @media screen and (max-width: 768px) {
   .table-responsive-stack tr {
     flex-direction: column;
     border-bottom: 3px solid #ccc;
     display: block;
   }
-  .container {
-    width: 95%;
-  }
-  .centered-container {
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .accordion-button {
-    width: 100%;
-  }
-  .project-item {
-    flex-direction: column;
-  }
-  .project-text,
-  .project-img-wrapper {
-    flex: 1;
-    max-width: 100%;
-  }
-  .project-img-wrapper {
-    order: -1;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+  .container { width: 95%; }
+  .centered-container { max-width: 90%; }
+  .accordion-button { width: 100%; }
+  .project-item { flex-direction: column; }
+  .project-text, .project-img-wrapper { flex: 1; max-width: 100%; }
+  .project-img-wrapper { order: -1; text-align: center; }
 }
-@media (min-width: 769px) and (max-width: 991px) {
-  .container {
-    width: 95%;
-  }
-  .centered-container {
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .accordion-button {
-    width: 100%;
-  }
-  .project-item {
-    flex-direction: column;
-  }
-  .project-text,
-  .project-img-wrapper {
-    flex: 1;
-    max-width: 100%;
-  }
-  .project-img-wrapper {
-    order: -1;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+
+/* ------------------------------
+   Fixed Catppuccin dark overrides
+   Place this at the *end* of styles.css (replace any older .theme-dark)
+------------------------------ */
+body.theme-dark {
+  background: #1e1e2e !important;
+  color: #cdd6f4 !important; /* default text color */
 }
-@media screen and (min-width: 992px) {
-  .research-item {
-    flex-direction: row;
-  }
-  .research-content {
-    flex: 1 0 66.666667%;
-    max-width: 66.666667%;
-  }
-  .research-sidebar {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-  }
-}/*# sourceMappingURL=styles.css.map */
+
+/* Make sure base text elements follow the palette */
+body.theme-dark p,
+body.theme-dark li,
+body.theme-dark td,
+body.theme-dark small,
+body.theme-dark .text_small,
+body.theme-dark .project-text,
+body.theme-dark .card,
+body.theme-dark .prototype-item {
+  color: #cdd6f4 !important;
+}
+
+/* Headings */
+body.theme-dark h1,
+body.theme-dark h2,
+body.theme-dark h3,
+body.theme-dark h4,
+body.theme-dark h5 {
+  color: #f5e0dc !important; /* rosewater */
+}
+
+/* Links & nav */
+body.theme-dark a,
+body.theme-dark .nav-link,
+body.theme-dark .text-pri {
+  color: #89b4fa !important; /* blue */
+}
+body.theme-dark a:hover,
+body.theme-dark .nav-link:hover {
+  color: #b4befe !important; /* lavender */
+}
+
+/* Navbar */
+body.theme-dark .navbar {
+  background-color: #313244 !important;
+  box-shadow: 0 0px 2px #585b70 inset, 0 2px 6px rgba(0,0,0,0.25);
+}
+body.theme-dark .navbar .nav-link { color: #cdd6f4 !important; }
+
+/* Cards / boxes / prototypes: distinct bg + border so they don't blend into page */
+body.theme-dark .card,
+body.theme-dark .accordion-item,
+body.theme-dark .prototype-item,
+body.theme-dark .creme,
+body.theme-dark .project-img-wrapper {
+  background-color: #313244 !important;
+  color: #cdd6f4 !important;
+  border: 1px solid #45475a !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+
+/* Horizontal rule */
+body.theme-dark hr { background-color: #585b70 !important; }
+
+/* Dark mode: make item + button backgrounds match */
+body.theme-dark .accordion-item {
+  background-color: #313244 !important;
+  border: none !important;
+}
+
+/* Accordion button (collapsed/normal) */
+body.theme-dark .accordion-button {
+  background-color: #313244 !important;
+  color: #cdd6f4 !important;
+  border-radius: 0 !important; /* removes ghost margin curve */
+  box-shadow: none !important;
+}
+
+/* Expanded button */
+body.theme-dark .accordion-button:not(.collapsed) {
+  background-color: #45475a !important;
+  color: #f5e0dc !important;
+}
+/* Ensure accordion arrows are visible in dark mode */
+body.theme-dark .accordion-button::after {
+  filter: invert(90%) grayscale(100%); /* makes it light */
+}
+
+
+/* Focus outline for accessibility */
+body.theme-dark .accordion-button:focus,
+body.theme-dark .toggle-btn:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(137,180,250,0.10) !important;
+}
+
+/* Project images - keep them visually separated */
+body.theme-dark .project-img {
+  background-color: #242634 !important;
+  border: 1px solid #3b3f4f !important;
+}
+body.theme-dark .project-img:hover {
+  background-color: #343646 !important;
+}
+
+/* Status tooltip */
+body.theme-dark .status-icon:hover::after {
+  background-color: #45475a !important;
+  color: #cdd6f4 !important;
+  border: none !important;
+}
+
+/* Utility accents */
+body.theme-dark .mintlight { background-color: #89b4fa !important; color: #1e1e2e !important; }
+
+/* Make sure icons/text inside cards also inherit readable color */
+body.theme-dark .card * { color: inherit !important; }
+
+/* Additional safety: override any lingering hard-coded black text within common components */
+body.theme-dark .project-text,
+body.theme-dark .prototype-item h3,
+body.theme-dark .card h3,
+body.theme-dark .accordion-body,
+body.theme-dark td,
+body.theme-dark .table-responsive-stack td,
+body.theme-dark .table-responsive-stack th {
+  color: #cdd6f4 !important;
+}
+
