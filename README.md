@@ -1,3 +1,3 @@
 # Portfolio
 ### My Public Projects in UX, Games, and Web Dev
-https://plutoworks.org
+Hosted with github pages at https://plutoworks.org
